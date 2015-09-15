@@ -1,6 +1,7 @@
 class JobsController < ApplicationController
   def index
     @jobs = Job.all
+    @companies = Company.all
   end
 
   def show

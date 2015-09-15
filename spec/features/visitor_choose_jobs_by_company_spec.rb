@@ -16,7 +16,7 @@ feature 'Visitor choose jobs by company' do
 
     click_on company.name
 
-    expect(page).to have_content company.name, count: 2
+    expect(page).to have_content company.name
     expect(page).to have_content job.title
     expect(page).to have_content job.category
     expect(page).to have_content job.description

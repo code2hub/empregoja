@@ -5,3 +5,12 @@
   <%= @company.phone %><br>
   <%= @company.mail %><br>
 </p>
+<h3>Vagas</h3>
+  <% @company.jobs.each do |job| %>
+    <p>
+      <%= job.title %><br>
+      <%= job.category %><br>
+      <%= job.description %><br>
+      <%= job.location %>
+    </p>
+  <% end %>
