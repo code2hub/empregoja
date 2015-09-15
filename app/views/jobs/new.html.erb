@@ -1,7 +1,5 @@
 <h1>Emprego Já</h1>
-<% if @job.errors.any? %>
-  <p>Warning! All fields are mandatory.</p>
-<% end %>
+<p><%= flash[:error] %></p>
 <%= form_for @job do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
